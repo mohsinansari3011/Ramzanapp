@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ramzan Calender</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/ramzan.ico" />
+
+    <link rel="manifest" href="manifest.json">
+</head>
+<body onLoad="fetchcalender()">
+
+    
+
+    <nav class="navbar navbar-default nav-color" id="nav">
+        <div class="container navbar-container">
+            
+               <a id="brand" href="index.html" class="navbar-brand">
+                <img style="width: 15%;" src="images/ramzan.ico">
+                <span class="spantitle">Ramzan<span>
+                </a>
+
+                <img src="images/search.png" id="search-img" alt="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="user-input" placeholder="Enter ramzan day...">
+                    <input type="button" value="X" class="btn" id="close-btn">
+                </div>
+            
+        </div>
+    </nav>
+    
+    
+    <div class="container-fluid" id="main-container">
+        <div class="row">
+            <div class="col-12">
+                <span class="table-heading">Ramzan Schedule 2018</span>
+                <div id="table">
+                    <table class="table table-bordered">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Roza</th>
+                                <th>Date</th>
+                                <th>Day</th>
+                                <th>Sehri Time</th>
+                                <th>Aftari Time</th>
+                            </tr>
+                        </thead>
+                        <tbody id="calenderBody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <script src="js/ramzantimings.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
